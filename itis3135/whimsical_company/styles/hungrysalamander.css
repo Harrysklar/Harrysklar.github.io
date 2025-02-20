@@ -4,13 +4,17 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  html, body {
+    height: 100%;
+  }
   /* Body styles */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #fff8f0; /* Light, warm background */
     color: #333;
+    display: flex;
+    flex-direction: column;
   }
   
   /* Header styles */
@@ -52,6 +56,7 @@
   /* Main content styles */
   main {
     padding: 20px;
+    flex: 1;
   }
   
   h2 {
@@ -71,6 +76,7 @@
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+    flex-shrink: 0;
   }
   
   footer nav {
