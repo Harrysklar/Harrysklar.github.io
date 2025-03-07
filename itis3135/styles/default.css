@@ -1,25 +1,40 @@
+/* Reset common elements for key selectors */
+html, body, header, nav, main, footer, .slogan {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure full viewport height */
+html, body {
+    height: 100%;
+}
+
+/* Body styles */
 body {
     background-color: lightcyan;
     color: #333333;
     font-family: 'Arial', 'Helvetica', sans-serif;
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3 {
-    font-family: 'pacifico', cursive;
+/* Unqualified heading styles (defined only once) */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Navigation styles */
 nav {
     margin: 13px 0;
 }
@@ -35,6 +50,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Header styles */
 header {
     background-color: #e74c3c;
     padding: 20px;
@@ -42,6 +58,7 @@ header {
     text-align: center;
 }
 
+/* Footer styles */
 footer {
     background-color: #34495e;
     padding: 20px;
@@ -56,12 +73,18 @@ footer a {
     text-decoration: none;
 }
 
-html {
-    height: 100%;
-}
-
+/* Main content styles */
 main {
     padding: 20px;
     flex: 1;
 }
 
+/* Image styling for elements with class "amg" */
+.amg img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    max-height: 1500px;
+    display: block;
+    margin: 0 auto;
+}

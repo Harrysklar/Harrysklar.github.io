@@ -1,12 +1,14 @@
-/* Reset some basic elements */
-* {
+  /* Reset common elements */
+  html, body, header, nav, main, footer, h1, h2, p, .slogan {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
+
   html, body {
     height: 100%;
+    box-sizing: border-box;
   }
+
   /* Body styles */
   body {
     font-family: Arial, sans-serif;
@@ -25,7 +27,7 @@
     text-align: center;
   }
   
-  header h1 {
+  h1 {
     font-family: 'Pacifico', cursive;
     font-size: 2.5em;
     margin-bottom: 10px;
