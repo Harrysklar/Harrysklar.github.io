@@ -77,6 +77,10 @@ footer a {
 main {
     padding: 20px;
     flex: 1;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* Image styling for elements with class "amg" */
@@ -85,4 +89,35 @@ main {
     height: 607px;
     display: block;
     margin: 0 auto;
+}
+
+/* Media Queries for responsiveness */
+/* for tablets and medium devices */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+    main .content {
+        padding: 15px;
+    }
+    header, footer {
+        padding: 15px;
+    }
+}
+
+/* for mobile devices */
+@media (max-width: 480px) {
+    main {
+        width: 98%;
+    }
+    main .content {
+        padding: 10px;
+    }
+    header, footer {
+        padding: 10px;
+    }
+    nav a {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
 }
