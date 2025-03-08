@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <title>Sklar Tech - Website Evaluations</title>
+  <!-- 
+    Coolors Color Scheme (for reference): https://coolors.co/f2f2f2-005a9c-222222-ff6600
+    Colors used:
+      - Background: #f2f2f2 (light gray)
+      - Header/Footer: #005a9c (deep blue)
+      - Headings/Accents: #ff6600 (orange)
+      - Text: #222222 (dark gray)
+  -->
+  <style>
+    /* Global Reset & Base Styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #222222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    
+    /* Header */
+    header {
+      background-color: #005a9c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border: 3px solid #ff6600;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    
+    /* Navigation - Custom link colors for header */
+    header nav a:link,
+    header nav a:visited {
+      color: #fff;  /* Force header links to white */
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    header nav a:hover,
+    header nav a:active {
+      color: #ffcc00;  /* Contrast color for hover/active */
+      text-decoration: underline;
+    }
+    
+    /* Main Section */
+    main {
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+    .section-heading {
+      color: #ff6600;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #005a9c;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    /* Footer link styling overrides defaults */
+    footer a:link,
+    footer a:visited {
+      color: #fff; /* White for default and visited states */
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1em;
+    }
+    footer a:hover,
+    footer a:active {
+      color: #ffcc00; /* Contrast color for hover/active states */
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Website Evaluations</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../introduction.html">Introduction</a>
+      <a href="../contract.html">Contract</a>
+      <a href="../whimsical_company/index.html">Hungry Salamander Incorporated</a>
+      <a href="website_evaluations.html">Website Evaluations</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h2 class="section-heading">Website Evaluations</h2>
+    
+    <!-- Well-Done Website Evaluation -->
+    <section>
+      <h3 class="section-heading"><a href="https://www.apple.com" target="_blank">Apple</a></h3>
+      <p>
+        Apple’s website exemplifies modern, user-friendly design with a clear visual hierarchy and smooth navigation.
+      </p>
+      <ul>
+        <li><strong>Contrast:</strong> Excellent contrast between text and background enhances readability.</li>
+        <li><strong>Repetition:</strong> Consistent fonts, colors, and spacing create a cohesive look.</li>
+        <li><strong>Alignment:</strong> All elements are aligned properly, guiding the user’s eye effortlessly.</li>
+        <li><strong>Proximity:</strong> Related information is grouped together, making it easy to scan.</li>
+      </ul>
+      <p>
+        Overall, Apple’s website adheres strongly to CRAP principles, resulting in a clean and efficient user experience.
+      </p>
+    </section>
+    
+    <!-- Terrible Website Evaluation -->
+    <section>
+        <h3 class="section-heading"><a href="https://www.lingscars.com" target="_blank">LingsCars.com</a></h3>
+        <p>
+          LingsCars.com is notorious for its chaotic, cluttered design. The page is filled with overwhelming animations, a multitude of fonts and colors, and an overall disorganized layout.
+        </p>
+        <ul>
+          <li><strong>Contrast:</strong> Despite the colorful design, the contrast is often mismanaged, making it hard to focus on content.</li>
+          <li><strong>Repetition:</strong> The inconsistent use of styles creates visual noise rather than unity.</li>
+          <li><strong>Alignment:</strong> Elements appear randomly placed, lacking clear alignment and order.</li>
+          <li><strong>Proximity:</strong> The dense arrangement of information leaves little room for breathing space, causing confusion.</li>
+        </ul>
+        <p>
+          In summary, LingsCars.com fails to follow CRAP principles, resulting in an overwhelming, cluttered, and frustrating user experience.
+        </p>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>
+      Page designed by <a href="../sklar-tech.com/index.html">Sklar-Tech</a>&copy; 2025, 
+      <i><a href="https://www.freecodecamp.org/certification/Harrison_Sklar/responsive-web-design" target="_blank">Certified in Responsive Web Design</a></i>
+    </p>
+  </footer>
+</body>
+</html>

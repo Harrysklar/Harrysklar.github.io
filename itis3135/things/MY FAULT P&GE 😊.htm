@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY FAULT P&GE 😊</title>
+  
+
+  <style>
+    /* Global Styles with a reset */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* a white background and black text (poor contrast with some elements below) */
+    body {
+      background-color: white;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      /* spacing that is inconsistent */
+      margin: 50px;
+      padding: 20px;
+      /* an absolute URL for a background image */
+      background-image: url("https://cdn.pixabay.com/photo/2014/09/01/14/39/forest-fire-432870_1280.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    /* Header with poor ordering */
+    header {
+      background-color: #222222;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    /* Instead of styling qualified headings, we use classes */
+    .site-title {
+      font-family: Papyrus, fantasy;  /* Papyrus font for the title */
+      font-size: 2em;
+      margin: 0 0 20px 0;
+      background-color: lightblue;
+      padding: 10px;
+    }
+    
+    .subheading {
+      font-family: "Comic Sans MS", cursive, sans-serif;  /* Comic Sans for subheadings */
+      font-size: 3em;
+      text-decoration: underline;
+      background-color: yellow;
+      margin: 0 0 20px 0;
+      padding: 10px;
+    }
+    
+    /* Paragraph with huge text and inline styles */
+    .huge-text {
+      font-size: 5em;
+      background-color: pink;
+      margin: 30px;
+      padding: 20px;
+      text-decoration: underline; /* Underlines non link text */
+    }
+    
+    /* Centered bullet list with non-standard bullets */
+    ul.custom-bullets {
+      list-style-type: circle;  
+      margin: 40px auto;
+      width: 50%;
+      text-align: center;
+    }
+    
+    /* A really big border with each side styled differently */
+    .bad-border {
+      border-top: 5px dotted green;
+      border-right: 5px dashed purple;
+      border-bottom: 5px double orange;
+      border-left: 5px groove blue;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  
+  <!-- putting h2 before h1 (bad order) -->
+  <h2 class="subheading">This is Awful Header Order</h2>
+  
+  <h1 class="site-title">My Really TERRIBLE Page Title</h1>
+  
+  
+  <!-- Image embedded with absolute link, size fixed at 400x400, aspect ratio ruined, filename without extension -->
+  <img src="https://cdn.pixabay.com/photo/2014/09/01/14/39/forest-fire-432870_1280" alt="Top of the World" width="400" height="400" style="border: 3px solid black; display: block; margin: 0 auto;">
+  
+  
+  <!-- A centered paragraph with huge text -->
+  <p class="huge-text" style="text-align: center; font-family: 'Comic Sans MS', cursive, sans-serif;">
+    This paragraph is centered, with HUGE text and awful margins.
+  </p>
+  
+  
+  <!-- Centered unordered list with extra blank lines above and below -->
+  
+  
+  <ul class="custom-bullets">
+    <li style="margin: 10px;">Bad Design Choice #1</li>
+    <li style="margin: 10px;">Ugly Color Scheme</li>
+    <li style="margin: 10px;">Inconsistent Fonts</li>
+    <li style="margin: 10px;">Poor Contrast</li>
+    <li style="margin: 10px;">Extra Blank Lines</li>
+    <li style="margin: 10px;">Underlined Non-links</li>
+  </ul>
+  
+  
+  <!-- A div with a really big border and badly styled contact info -->
+  <div class="bad-border">
+    <p style="font-family: 'Times New Roman', Times, serif; font-size: 1.2em;">
+      Contact us at: contact@myfaultp&ge or call (000) 000-0000
+    </p>
+  </div>
+  
+  
+  
+  
+</body>
+</html>

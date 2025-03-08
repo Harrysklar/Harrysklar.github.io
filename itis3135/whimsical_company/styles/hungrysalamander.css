@@ -1,7 +1,8 @@
   /* Reset common elements */
-  html, body, header, nav, main, footer, h1, h2, p, .slogan {
+  html, body, header, nav, main, footer {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   html, body {
@@ -32,6 +33,16 @@
     font-size: 2.5em;
     margin-bottom: 10px;
   }
+
+  h2 {
+    color: #ff4500;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
   
   /* Navigation styles */
   nav {
@@ -61,15 +72,6 @@
     flex: 1;
   }
   
-  h2 {
-    color: #ff4500;
-    margin-bottom: 15px;
-  }
-  
-  p {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-  }
   
   /* Footer styles */
   footer {

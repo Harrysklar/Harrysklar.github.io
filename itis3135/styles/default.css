@@ -81,10 +81,8 @@ main {
 
 /* Image styling for elements with class "amg" */
 .amg img {
-    width: 100%;
-    max-width: 1500px;
-    height: auto;
-    max-height: 1500px;
+    width: 575px;
+    height: 607px;
     display: block;
     margin: 0 auto;
 }
