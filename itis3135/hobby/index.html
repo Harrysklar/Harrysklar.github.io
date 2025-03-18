@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Game Hub</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Reset common elements for key selectors */
+    html, body, header, nav, main, footer, .slogan {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ensure full viewport height */
+    html, body {
+        height: 100%;
+    }
+
+    /* Body styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1c1c1c;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #0077cc;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px solid #ff6600;
+        margin-bottom: 20px;
+    }
+
+    em {
+        font-style: italic;
+    }
+    .site-title {
+        font-size: 2.5em;
+        margin: 0;
+        color: #ff6600;
+    }
+
+    /* Navigation in Header */
+    nav {
+        margin: 15px 0;
+        text-align: center;
+    }
+    nav a {
+        color: #ff6600;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Main content container */
+    main {
+        flex: 1;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    main .content {
+        padding: 20px;
+    }
+
+    /* Section styles */
+    section {
+        display: none;
+        padding: 20px;
+    }
+
+    .active {
+        display: block;
+    }
+
+
+    .section-heading {
+        color: #ff6600;
+        margin-top: 0;
+    }
+    .section-subheading {
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
+    section p {
+        margin-bottom: 15px;
+        font-size: 1.1em;
+    }
+    figure {
+        text-align: center;
+        margin: 15px 0;
+    }
+    figcaption {
+        font-style: italic;
+        font-size: 0.9em;
+        color: #cccccc;
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: #0077cc;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        flex-shrink: 0;
+        margin-top: 20px;
+    }
+    footer nav a {
+        color: #ff6600;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1em;
+    }
+    footer nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+        main .content {
+            padding: 15px;
+        }
+        header, footer {
+            padding: 15px;
+        }
+        nav a {
+            font-size: 1em;
+            margin: 0 8px;
+        }
+    }
+    @media (max-width: 480px) {
+        main .content {
+            padding: 10px;
+        }
+        header, footer {
+            padding: 10px;
+        }
+        nav a {
+            font-size: 0.9em;
+            margin: 0 5px;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Video Game Hub</h1>
+    <nav>
+      <a href="#home">Home</a> 🎮 
+      <a href="#about">About Me</a> 🎮 
+      <a href="#schedule">Release & Events</a> 🎮 
+      <a href="#venues">Gaming Venues</a> 🎮 
+      <a href="#strategies">Game Strategies</a> 🎮 
+      <a href="#passion">My Passion</a> 🎮 
+    </nav>
+  </header>
+  
+  <main>
+    <div class="content">
+      <!-- Home Section -->
+      <section id="home" class="active">
+        <h2>Home</h2>
+        <h3>Welcome to Video Game Hub</h3>
+        <p>This website is your one-stop destination for exploring the world of video games, especially hero shooters and the Dark Souls series.</p>
+        <figure>
+          <img src="./images/hero_shooter.png" alt="Hero Shooter Game Screenshot" width="400" height="300">
+          <figcaption>Screenshot from a popular hero shooter game</figcaption>
+        </figure>
+        <p><em>Prompt: "A high-resolution, cinematic screenshot from a futuristic hero shooter game featuring dynamic lighting, neon effects, and action-packed gameplay."</em></p>
+      </section>
+      
+      <!-- About Me Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <h3>My Gamer Profile</h3>
+        <p>I am an avid gamer with a deep passion for both fast-paced hero shooters and the challenging, atmospheric worlds of Dark Souls. My gaming journey has taught me strategy, persistence, and creativity.</p>
+        <figure>
+          <img src="./images/dream_gaming.png" alt="My Dream Gaming Setup" width="400" height="300">
+          <figcaption>My dream gaming setup that fuels my passion.</figcaption>
+        </figure>
+        <p><em>Prompt: "A stylized portrait of a passionate gamer in a futuristic digital environment, with neon accents and a retro gaming vibe, conveying dedication and creativity."</em></p>
+      </section>
+      
+      <!-- Release & Events Section -->
+      <section id="schedule">
+        <h2>Release & Events</h2>
+        <h3>Latest Game Releases & Tournaments</h3>
+        <p>Stay informed about the latest game releases and upcoming gaming events. From major tournaments to local meetups, this section covers it all.</p>
+        <figure>
+          <img src="./images/gaming_event.png" alt="Gaming Event" width="400" height="300">
+          <figcaption>A snapshot from a recent gaming event</figcaption>
+        </figure>
+        <p><em>Prompt: "A dynamic scene of a large crowd at a futuristic gaming event, with vibrant stage lighting, large digital screens, and an energetic atmosphere."</em></p>
+      </section>
+      
+      <!-- Gaming Venues Section -->
+      <section id="venues">
+        <h2>Gaming Venues</h2>
+        <h3>Where and how to Play</h3>
+        <p>Decide between in person competitions or online competition.</p>
+        <figure>
+          <img src="./images/gaming_cafe.png" alt="Gaming Cafe" width="400" height="300">
+          <figcaption>A popular gaming cafe that brings enthusiasts together</figcaption>
+        </figure>
+        <p><em>Prompt: "A photorealistic image of a modern gaming cafe with sleek design, neon lights, and gamers immersed in their screens, evoking a vibrant community atmosphere."</em></p>
+      </section>
+      
+      <!-- Game Strategies Section -->
+      <section id="strategies">
+        <h2>Game Strategies</h2>
+        <h3>Tips & Tricks</h3>
+        <p>Whether you're a newbie or a seasoned veteran, there are always new strategies to learn. Explore tutorials, guides, and expert tips to elevate your gameplay in hero shooters and Dark Souls.</p>
+        <figure>
+          <img src="./images/strategic_gaming.png" alt="Gameplay Tutorial" width="400" height="300">
+          <figcaption>Gameplay tutorial showcasing strategic play</figcaption>
+        </figure>
+        <p><em>Prompt: "A cinematic depiction of a strategic gaming session with a digital interface overlay on a futuristic battlefield, blending tactical elements with bold neon colors."</em></p>
+      </section>
+      
+      <!-- My Passion Section -->
+      <section id="passion">
+        <h2>My Passion</h2>
+        <h3>Why I Love Gaming</h3>
+        <p>Gaming is my escape, my challenge, and my creative outlet. The intense action of hero shooters and the immersive lore of Dark Souls have shaped my passion for gaming.</p>
+        <figure>
+          <img src="./images/my_passion.png" alt="Dark Souls Atmosphere" width="400" height="300">
+          <figcaption>The dark, immersive ambiance of Dark Souls</figcaption>
+        </figure>
+        <p><em>Prompt: "A dramatic, moody portrait of a gamer surrounded by glowing screens and dynamic digital effects, capturing the intensity and passion of gaming."</em></p>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <p>
+      Page designed by <a href="../sklar-tech.com/index.html">Sklar-Tech</a>&copy; 2025, 
+      <i><a href="https://www.freecodecamp.org/certification/Harrison_Sklar/responsive-web-design" target="_blank">Certified in Responsive Web Design</a></i>
+    </p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../introduction.html">Introduction</a>
+      <a href="../contract.html">Contract</a>
+      <a href="../whimsical_company/index.html">Hungry Salamander Incorporated</a>
+      <a href="../sklar-tech.com/index.html">Sklar-Tech</a>
+      <a href="../websiteEval/website_evaluations.html">Website Evaluations</a>
+      <a href="index.html">Hobby</a>
+    </nav>
+  </footer>
+  
+  <script>
+    // JavaScript to hide all sections except the active one when navigation links are clicked
+    const navLinks = document.querySelectorAll('header nav a');
+    navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          // Remove active class from all sections
+          document.querySelectorAll('main section').forEach((section) => {
+            section.classList.remove('active');
+          });
+          // Get target section id (skip the '#' if present)
+          const targetId = link.getAttribute('href').replace('#', '');
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.classList.add('active');
+          }
+        });
+    });
+  </script>
+  
+</body>
+</html>
