@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - Hungary Salamander</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <!-- Embedded Stylesheet -->
+     <style>
+        /* Reset & Base Styles */
+        html, body, header, nav, main, footer, .slogan {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+          height: 100%;
+        }
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #1c1c1c;
+          color: #e0e0e0;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          line-height: 1.5;
+        }
+
+        /* Header */
+        header {
+          background-color: #0077cc;
+          text-align: center;
+          border-bottom: 4px solid #ff6600;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+        .site-title {
+            font-size: 2.5em;
+            margin: 0;
+            color: #ff6600;
+        }
+        nav {
+          margin: 15px 0;
+          text-align: center;
+        }
+        nav a {
+          color: #ff6600;
+          text-decoration: none;
+          margin: 0 10px;
+          font-weight: bold;
+          font-size: 1.1em;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+
+        /* Main content container */
+        main {
+          flex: 1;
+          width: 100%;
+          margin: 0 auto;
+          box-sizing: border-box;
+        }
+        .content {
+          padding: 20px;
+        }
+
+        /* Table & List Styles */
+        h2, h3 {
+          color: #ff6600;
+        }
+        ol {
+          padding-left: 20px;
+          margin-bottom: 20px;
+          font-size: 1.1em;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+        }
+        th, td {
+          border: 1px solid #555;
+          padding: 8px;
+          text-align: left;
+        }
+        th {
+          background-color: #222;
+          color: #fff;
+        }
+        /* Alternating row colors */
+        tr:nth-child(even) {
+          background-color: #333;
+        }
+        tr:nth-child(odd) {
+          background-color: #444;
+        }
+        /* Accessibility: scope attribute will be added directly in HTML for th elements */
+
+        figure {
+          margin: 20px 0;
+          text-align: center;
+        }
+        figcaption {
+          font-style: italic;
+          font-size: 0.9em;
+          color: #cccccc;
+        }
+
+        /* Footer */
+        footer {
+          background-color: #0077cc;
+          color: #e0e0e0;
+          text-align: center;
+          border-radius: 10px;
+          flex-shrink: 0;
+          margin-top: 20px;
+          width: 100%;
+        }
+        footer nav a {
+          color: #ff6600;
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 1em;
+        }
+        footer nav a:hover {
+          text-decoration: underline;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+          .content {
+            padding: 15px;
+          }
+          header, footer {
+            padding: 15px;
+          }
+          nav a {
+            font-size: 1em;
+            margin: 0 8px;
+          }
+        }
+        @media (max-width: 480px) {
+          .content {
+            padding: 10px;
+          }
+          header, footer {
+            padding: 10px;
+          }
+          nav a {
+            font-size: 0.9em;
+            margin: 0 5px;
+          }
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>HTML Tables - Whimsical Company</h2>
+        <div class="content">
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Adam Green - adam.green@example.com - 12</li>
+                <li>Bella Blue - bella.blue@example.com - 25</li>
+                <li>Charlie Red - charlie.red@example.com - 8</li>
+                <li>Diana Silver - diana.silver@example.com - 18</li>
+                <li>Ethan Gold - ethan.gold@example.com - 5</li>
+                <li>Fiona Bronze - fiona.bronze@example.com - 20</li>
+                <li>George Copper - george.copper@example.com - 30</li>
+                <li>Hannah Iron - hannah.iron@example.com - 15</li>
+            </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Years of Service</th>
+                </tr>
+                <tr>
+                    <td>Adam Green</td>
+                    <td>adam.green@example.com</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                  <td>Bella Blue</td>
+                  <td>bella.blue@example.com</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>Charlie Red</td>
+                  <td>charlie.red@example.com</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Diana Silver</td>
+                  <td>diana.silver@example.com</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Ethan Gold</td>
+                  <td>ethan.gold@example.com</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Fiona Bronze</td>
+                  <td>fiona.bronze@example.com</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>George Copper</td>
+                  <td>george.copper@example.com</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                    <td>Hannah Iron</td>
+                    <td>hannah.iron@example.com</td>
+                    <td>15</td>
+                </tr>
+            </table>
+
+                        <!-- Complex Table Section -->
+      <h3>Employee Data in Complex Table</h3>
+      <figure>
+        <table>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Years of Service</th>
+            <th scope="col">Monthly Salary</th>
+          </tr>
+          <tr>
+            <td>Executive</td>
+            <td>Adam Green</td>
+            <td>adam.green@example.com</td>
+            <td>12</td>
+            <td>$8,000</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Management</td>
+            <td>Bella Blue</td>
+            <td>bella.blue@example.com</td>
+            <td>25</td>
+            <td>$7,000</td>
+          </tr>
+          <tr>
+            <td>Charlie Red</td>
+            <td>charlie.red@example.com</td>
+            <td>8</td>
+            <td>$5,000</td>
+          </tr>
+          <tr>
+            <td>Operations</td>
+            <td>Diana Silver</td>
+            <td>diana.silver@example.com</td>
+            <td>18</td>
+            <td>$6,000</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Support</td>
+            <td>Ethan Gold</td>
+            <td>ethan.gold@example.com</td>
+            <td>5</td>
+            <td>$4,000</td>
+          </tr>
+          <tr>
+            <td>Fiona Bronze</td>
+            <td>fiona.bronze@example.com</td>
+            <td>20</td>
+            <td>$4,500</td>
+          </tr>
+          <tr>
+            <td>George Copper</td>
+            <td>george.copper@example.com</td>
+            <td>30</td>
+            <td>$6,500</td>
+          </tr>
+          <tr>
+            <td>Technical</td>
+            <td>Hannah Iron</td>
+            <td>hannah.iron@example.com</td>
+            <td>15</td>
+            <td>$5,500</td>
+          </tr>
+
+          <!-- Total rows -->
+           <tr>
+                <th colspan="3">Total Years of Service</th>
+                <td><strong>133</strong></td>
+                <td></td>
+           </tr>
+           <tr>
+                <th colspan="4">Total Monthly Salaries</th>
+                <td><strong>$8,000 + $7,000 + $5,000 + $6,000 + $4,000 + $4,500 + $6,500 + $5,500</strong></td>
+           </tr>
+        </table>
+        <figcaption>Employee Information</figcaption>
+        </figure>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
