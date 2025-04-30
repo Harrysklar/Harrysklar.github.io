@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <style>
+    html, body, header, nav, main, footer {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1c1c1c;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    header {
+      background-color: #0077cc;
+      text-align: center;
+      border-bottom: 4px solid #ff6600;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .site-title {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ff6600;
+    }
+    nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+    nav a {
+      color: #ff6600;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    form {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      color: #e0e0e0;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="file"],
+    form textarea {
+      width: 100%;
+      margin-top: 5px;
+      border-radius: 5px;
+      background-color: #222;
+      color: #e0e0e0;
+    }
+    form textarea {
+      resize: vertical;
+    }
+    form input[type="checkbox"] {
+      margin-top: 10px;
+    }
+    .courses-label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .course-container {
+      margin-top: 10px;
+    }
+    .course-field {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .course-field input[type="text"] {
+      flex: 1;
+      margin-right: 5px;
+    }
+    .course-field button {
+      background-color: #ff6600;
+      border: none;
+      color: #1c1c1c;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .buttons input {
+      background-color: #0077cc;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #ff6600;
+    }
+    #result {
+      background-color: #222;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #0077cc;
+      color: #e0e0e0;
+      text-align: center;
+      border-radius: 10px;
+      flex-shrink: 0;
+      margin-top: 20px;
+      width: 100%;
+    }
+    footer nav a {
+      color: #ff6600;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1em;
+    }
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding: 15px;
+      }
+      header, footer {
+        padding: 15px;
+      }
+      nav a {
+        font-size: 1em;
+        margin: 0 8px;
+      }
+    }
+    @media (max-width: 480px) {
+      main {
+        padding: 10px;
+      }
+      header, footer {
+        padding: 10px;
+      }
+      nav a {
+        font-size: 0.9em;
+        margin: 0 5px;
+      }
+    }
+  </style>
+  <script src="scripts/survey.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>BYO Intro</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>BYO Intro</h2>
+    <h3>Time to create your own Introduction page!</h3>
+    <form id="introForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="Harrison Sklar" required>
+      
+      <label for="mascot">Mascot:</label>
+      <input type="text" id="mascot" name="mascot" value="Hungry Salamander" required>
+      
+      <label for="image">Image (PNG or JPG):</label>
+      <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
+      
+      <label for="imageCaption">Image Caption:</label>
+      <input type="text" id="imageCaption" name="imageCaption" value="Me standing on the top of the world trade center" required>
+      
+      <label for="personalBackground">Personal Background:</label>
+      <textarea id="personalBackground" name="personalBackground" rows="3" required>I’m a Charlotte native with a diverse background...</textarea>
+      
+      <label for="professionalBackground">Professional Background:</label>
+      <textarea id="professionalBackground" name="professionalBackground" rows="3" required>I have worked as a personal trainer and in the food industry...</textarea>
+      
+      <label for="academicBackground">Academic Background:</label>
+      <textarea id="academicBackground" name="academicBackground" rows="3" required>I have an associate degree and am working toward a Bachelor's in Computer Science...</textarea>
+      
+      <label for="webDevBackground">Background in Web Development:</label>
+      <textarea id="webDevBackground" name="webDevBackground" rows="3" required>I have some experience in HTML, CSS, and JavaScript...</textarea>
+      
+      <label for="primaryPlatform">Primary Computer Platform:</label>
+      <input type="text" id="primaryPlatform" name="primaryPlatform" value="Windows PC" required>
+      
+      <label class="courses-label">Courses Currently Taking:</label>
+      <div id="coursesContainer" class="course-container">
+        <div class="course-field">
+          <input type="text" name="course[]" placeholder="Course name - Reason" required>
+          <button type="button" class="deleteCourse" onclick="deleteCourse(this)">Delete</button>
+        </div>
+      </div>
+      <button type="button" id="addCourse">Add Course</button>
+      
+      <label for="funnyThing">Funny/Interesting Item about Yourself:</label>
+      <input type="text" id="funnyThing" name="funnyThing" value="I love to go line dancing with my friends" required>
+      
+      <label for="anythingElse">Anything Else You’d Like to Share:</label>
+      <input type="text" id="anythingElse" name="anythingElse" value="I am way too good at soul games" required>
+      
+      <label>
+        <input type="checkbox" id="agree" name="agree" required>
+        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+      </label>
+      
+      <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+    <div id="result"></div>
+    <p><a href="#" id="resetLink">Reset Progress</a></p>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
