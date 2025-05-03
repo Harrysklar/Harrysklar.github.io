@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Slideshow – Harrison Sklar</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slideshow.js" defer></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>ITIS3135 – Harrison Sklar</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Slideshow</h2>
+    <p class="tagline">
+      Browse items that correspond to each letter of my full name, <strong>Harrison Sklar</strong>.
+    </p>
+
+    <!-- Visible slide -->
+    <div id="slideshow">
+      <img id="slideImage"
+           src="images/hair_brush.png"
+           alt="H — Hairbrush">
+      <div id="slideCaption">H — Hairbrush</div>
+    </div>
+
+    <!-- Thumbnails -->
+    <ul id="thumbnails">
+      <li data-src="images/hair_brush.png" data-caption="H — Hairbrush">H</li>
+      <li data-src="images/apple.png"     data-caption="A — Apple">A</li>
+      <li data-src="images/ring.png"      data-caption="R — Ring">R</li>
+      <li data-src="images/rose.png"      data-caption="R — Rose">R</li>
+      <li data-src="images/ice_cream.png"  data-caption="I — Ice Cream">I</li>
+      <li data-src="images/sun.png"       data-caption="S — Sun">S</li>
+      <li data-src="images/slideshow/owl.jpg"       data-caption="O — Owl">O</li>
+      <li data-src="images/slideshow/notebook.jpg"  data-caption="N — Notebook">N</li>
+      <li data-src="images/slideshow/spoon.jpg"     data-caption="S — Spoon">S</li>
+      <li data-src="images/slideshow/key.jpg"       data-caption="K — Key">K</li>
+      <li data-src="images/slideshow/leaf.jpg"      data-caption="L — Leaf">L</li>
+      <li data-src="images/slideshow/anchor.jpg"    data-caption="A — Anchor">A</li>
+      <li data-src="images/slideshow/rainbow.jpg"   data-caption="R — Rainbow">R</li>
+    </ul>
+
+    <!-- AI prompts used -->
+    <h3>Image Prompts</h3>
+    <ul>
+      <li><strong>Hairbrush</strong>: “A realistic photograph of a wooden hairbrush on a white background” — DALL·E 3</li>
+      <li><strong>Apple</strong>: “A crisp red apple with a leaf, perfectly lit on white” — DALL·E 3</li>
+      <li><strong>Ring</strong>: “A close-up of a gold ring on a marble surface” — DALL·E 3</li>
+      <li><strong>Rose</strong>: “A single red rose against a black backdrop” — DALL·E 3</li>
+      <li><strong>Ice Cream</strong>: “A single scoop of vanilla ice cream in a waffle cone” — DALL·E 3</li>
+      <li><strong>Sun</strong>: “A bright yellow sun icon with radiating rays on a blue sky” — DALL·E 3</li>
+      <li><strong>Owl</strong>: “A photorealistic barn owl perched on a branch” — DALL·E 3</li>
+      <li><strong>Notebook</strong>: “An open spiral notebook with blank pages” — DALL·E 3</li>
+      <li><strong>Spoon</strong>: “A stainless steel spoon on a wooden surface” — DALL·E 3</li>
+      <li><strong>Key</strong>: “A vintage brass key on a dark background” — DALL·E 3</li>
+      <li><strong>Leaf</strong>: “A green maple leaf on a white background” — DALL·E 3</li>
+      <li><strong>Anchor</strong>: “A classic ship anchor icon in black on white” — DALL·E 3</li>
+      <li><strong>Rainbow</strong>: “A vibrant rainbow arch on a clear sky” — DALL·E 3</li>
+    </ul>
+
+    <!-- Notes & signature -->
+    <h3>Notes</h3>
+    <ul>
+      <li><strong>Sites:</strong> W3Schools “How To Create a Slideshow” tutorial</li>
+      <li><strong>Other:</strong> ChatGPT for code structure guidance</li>
+    </ul>
+    <p><strong>Challenges:</strong> Ensuring responsive aspect ratio for all images.</p>
+    <p>I confirm this is my own work and I did not copy-paste anyone else’s code.</p>
+    <p>Signed, Harrison Sklar — 2025-05-03 1:45</p>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+</body>
+</html>
