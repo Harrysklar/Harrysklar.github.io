@@ -1,71 +1,88 @@
-/* Reset & base */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html, body {
-    height: 100%;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Header & nav */
-  header {
-    background: #0077cc;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  header h1 {
-    margin-bottom: 10px;
-  }
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main */
-  main {
-    flex: 1;
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  main h2 {
-    margin-bottom: 16px;
-    color: #0077cc;
-  }
-  
-  /* Footer */
-  footer {
-    background: #0077cc;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-  }
-  footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 8px;
-  }
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
+/* --- Reset & Base Styles --- */
+/* Box-sizing and margin/padding reset for root elements */
+html, body, header, nav, main, footer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body spans full viewport height */
+html, body {
+  height: 100%;
+}
+
+/* Base body styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Headings --- */
+/* Site title */
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff; /* if your header background is blue */
+}
+/* Main section titles */
+h2 {
+  margin-bottom: 16px;
+  color: #0077cc;
+}
+
+/* --- Header --- */
+/* Site title bar */
+header {
+  background: #0077cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Navigation --- */
+/* Main nav links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Main Content --- */
+/* Core content container */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Footer --- */
+/* Footer bar */
+footer {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+/* Footer validation links */
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 8px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
